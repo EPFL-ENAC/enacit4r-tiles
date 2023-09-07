@@ -28,8 +28,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./traefik.yaml:/configuration/traefik.yml
-      - ${SSL_CERT_KEY:-./cert/certificate.key}:/cert/certificate.key
-      - ${SSL_CERT_CRT:-./cert/certificate.crt}:/cert/certificate.crt
+      - /etc/ssl:/etc/ssl
+    environment:
+      - SSL_CERT_CRT=${SSL_CERT_CRT:-./cert/certificate.crt}
+      - SSL_CERT_KEY=${SSL_CERT_KEY:-./cert/certificate.key}
     ports:
       - "80:80"
       - "443:443"
