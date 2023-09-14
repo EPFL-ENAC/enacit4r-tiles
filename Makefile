@@ -9,6 +9,16 @@ run:
 stop:
 	docker compose stop
 
+# restart martin to refresh catalog
+restart-martin:
+	docker compose restart martin
+
+# remove nginx cache
+clear-cache:
+	docker compose stop nginx
+	rm -rf ./cache/*
+	docker compose up -d nginx
+
 UID := $(shell id -u)
 GID := $(shell id -g)
 
