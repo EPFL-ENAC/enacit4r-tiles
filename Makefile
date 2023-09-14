@@ -10,7 +10,7 @@ stop:
 	docker compose stop
 
 # restart martin to refresh catalog
-restart-martin:
+refresh-catalog:
 	docker compose restart martin
 
 # remove nginx cache
