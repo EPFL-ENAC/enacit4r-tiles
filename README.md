@@ -44,7 +44,7 @@ make refresh-catalog
 
 1. Declare a source
 
-Example of [composite sources](https://maplibre.org/martin/sources-composite.html):
+Example of [composite sources](https://maplibre.org/martin/sources-composite.html) (note: use composite sources with caution as it affects processing performance):
 
 ```
   "sources": {
