@@ -42,9 +42,9 @@ make refresh-catalog
 
 ## Integration in MapLibre
 
-0. Get source IDs
+0. Get layer IDs
 
-Visit [enacit4r-tiles.epfl.ch/catalog](https://enacit4r-tiles.epfl.ch/catalog) to find your source IDs.
+Visit [enacit4r-tiles.epfl.ch/catalog](https://enacit4r-tiles.epfl.ch/catalog) to find your layer IDs.
 
 2. Declare a source
 
