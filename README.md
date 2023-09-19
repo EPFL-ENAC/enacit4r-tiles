@@ -42,7 +42,11 @@ make refresh-catalog
 
 ## Integration in MapLibre
 
-1. Declare a source
+0. Get source IDs
+
+Visit [enacit4r-tiles.epfl.ch/catalog](https://enacit4r-tiles.epfl.ch/catalog) to find your source IDs.
+
+2. Declare a source
 
 Example of [composite sources](https://maplibre.org/martin/sources-composite.html) (note: use composite sources with caution as it affects processing performance):
 
