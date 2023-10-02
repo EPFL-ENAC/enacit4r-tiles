@@ -46,9 +46,24 @@ make refresh-catalog
 
 Visit [enacit4r-tiles.epfl.ch/catalog](https://enacit4r-tiles.epfl.ch/catalog) to find your layer IDs.
 
-2. Declare a source
+2. Declare source(s)
 
-Example of [composite sources](https://maplibre.org/martin/sources-composite.html) (note: use composite sources with caution as it affects processing performance):
+Declare one source per table of geometries:
+
+```
+  "sources": {
+    "landuse_abiotic": {
+      "type": "vector",
+      "url": "https://enacit4r-tiles.epfl.ch/LandUse_Sg_Sel_2020_abiotic"
+    },
+    "landuse_biotic": {
+      "type": "vector",
+      "url": "https://enacit4r-tiles.epfl.ch/LandUse_Sg_Sel_2020_biotic"
+    }
+  }
+```
+
+Or use [composite sources](https://maplibre.org/martin/sources-composite.html) (note: use composite sources with caution as it affects processing performance):
 
 ```
   "sources": {
